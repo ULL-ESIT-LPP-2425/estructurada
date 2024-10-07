@@ -20,7 +20,7 @@ end
 # Línea de comando
 puts "\nLínea de comando: "
 
-p ARGV
+p ARGV #array de cadenas String predefinido
 
 # Entrada/Salida
 if ARGV.size == 0 then
