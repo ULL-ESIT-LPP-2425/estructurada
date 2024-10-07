@@ -1,4 +1,4 @@
-#! /home/usuario/.rvm/rubies/ruby-2.7.2/bin/ruby 
+#! /usr/local/rvm/gems/ruby-3.3.4/bin/ruby
 # Ejemplo de Programación Estructurada o Modular
 
 def perimetro_cuadrado(longitud_lado)
@@ -15,6 +15,16 @@ end
 
 def area_triangulo(base, altura)
   base * altura / 2.0
+end
+
+# funciónn para calcular el perímetro de un circulo
+def perimetro_circulo(radio)
+  2 * Math::PI * radio
+end
+
+# función para calcular el área de un círculo
+def area_circulo(radio)
+  Math::PI * radio * radio
 end
 
 # Línea de comando
@@ -47,5 +57,13 @@ i = 1
 while i <= n
   puts "Perímetro de un triángulo de lados #{i}: #{perimetro_triangulo(i, i, i)}"
   puts "Área de un triángulo de base y altura #{i}: #{area_triangulo(i, i)}"
+  i += 1
+end
+
+puts "\n--/\--/\--/ Cirdulo  \--/\--/\--\n"
+i = 1
+while i <= n
+  puts "Perímetro de un circulo de radio #{i}: #{perimetro_circulo(i)}"
+  puts "Área de un circulo de radio #{i}: #{area_circulo(i)}"
   i += 1
 end
